@@ -1,11 +1,12 @@
 <!DOCTYPE html>
     <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src= "js/jquery-3.1.1.min.js"></script>
 
         <script type="text/javascript">
         setTimeout(read,3000);
     function read(){
-    setTimeout(jQuery.get('/mod3sol\site\megs2.text',function(data){
+    setTimeout(jQuery.get('megs2.text',function(data){
     document.write(data);}));
     }
 </script>
