@@ -1,19 +1,20 @@
 <!DOCTYPE html>
     <head>
+         <div id="container"></div>               
+   
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src= "js/jquery-3.1.1.min.js"></script>
 
         <script type="text/javascript">
-        setTimeout(read,3000);
+        setTimeout(read,5000);
     function read(){
-    setTimeout(jQuery.get('megs2.text',function(data){
-    document.write(data);}));
+    setInterval(jQuery.get('megs2.text',function(data){
+   $('#container').html(data)}));
     }
 </script>
 </head>
 <body>
 <h1>HART</h1>
-        
 </body>
 </html>
 
