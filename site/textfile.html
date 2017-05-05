@@ -1,5 +1,6 @@
 <!DOCTYPE html>
     <head>
+    <h1>HART SENSOR VALUE</h1>
          <div id="container"></div>               
    
 
@@ -8,13 +9,13 @@
         <script type="text/javascript">
         setInterval(read,5000);
     function read(){
-jQuery.get('/mod3sol\site\megs2.text',function(data){
+jQuery.get("megs.txt",function(data){
    $('#container').html(data);});
     }
 </script>
 </head>
 <body>
-<h1>HART</h1>
+
 </body>
 </html>
 
